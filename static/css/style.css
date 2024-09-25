@@ -1,0 +1,49 @@
+html, body {
+    font-family: 'defaultFont', monospace;
+    height: 100%;
+
+    background: linear-gradient(to bottom right, rgba(193,63,208,1), rgba(59,60,255,1));
+}
+
+/* navi bar */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+    text-decoration: underline;
+}
+
+article {
+    display: none;
+}
+
+#home_button:checked ~ #home {
+    display: block;
+}
+
+#coding_button:checked ~ #coding {
+    display: block;
+}
+
+#writing_button:checked ~ #writing {
+    display: block;
+}
+
+#blog_button:checked ~ #blog {
+    display: block;
+}
+
+#about_button:checked ~ #about {
+    display: block;
+}
+
+nav {
+    display: grid;
+}
